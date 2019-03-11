@@ -1,17 +1,28 @@
 import { HttpEffect, EffectFactory, combineRoutes } from "@marblejs/core";
-import { mapTo } from 'rxjs/operators';
+import { mapTo, map } from 'rxjs/operators';
 
-const usersEffect$: HttpEffect = req$ =>
-  req$.pipe(
-    mapTo({ body: 'Hello, world'})
-  );
+const indexEffect$: HttpEffect = req$ =>
+    req$.pipe(
+      mapTo({ body: 'response for users'})
+    );
 
-const users$ = EffectFactory
-  .matchPath('/users')
+const index$ = EffectFactory
+  .matchPath('/')
   .matchType('GET')
-  .use(usersEffect$)
+  .use(indexEffect$)
 
-export const api$ = combineRoutes(
-  '',
-  [ users$ ],
+const postEffect$: HttpEffect = req$ =>
+      req$.pipe(
+        map(req$ => req$.body as {name: string, email: string, password: string} ),
+        map(body => ({ body: body.name }))
+      )
+
+const post$ = EffectFactory
+  .matchPath('/')
+  .matchType('POST')
+  .use(postEffect$)
+
+export const userApi$ = combineRoutes(
+  '/users',
+  [ index$, post$ ],
 )

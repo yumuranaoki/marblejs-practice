@@ -17,6 +17,16 @@
     qs "^6.6.0"
     uuid "^3.3.2"
 
+"@marblejs/middleware-body@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@marblejs/middleware-body/-/middleware-body-2.0.0.tgz#ec5fd5368bb125c5fcb5a9ccb094bc2f354462e9"
+  integrity sha512-u/1xMEUTsT4qFQup7DKUXxsn8CMneHyD6aGuAaaSTVbfP2jf7cXwAhzJTS6WYZopJ1HdVR6If2LBfxedGiI7QA==
+  dependencies:
+    "@types/qs" "^6.5.1"
+    "@types/type-is" "~1.6.2"
+    qs "^6.6.0"
+    type-is "~1.6.16"
+
 "@types/node@*":
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.0.tgz#070e9ce7c90e727aca0e0c14e470f9a93ffe9390"
@@ -26,6 +36,13 @@
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.5.2.tgz#7f347062655056662845ba4bb79dcbfdc382cd61"
   integrity sha512-47kAAs3yV/hROraCTQYDMh4p/6zI9+gtssjD0kq9OWsGdLcBge59rl49FnCuJ+iWxEKiqFz6KXzeGH5DRVjNJA==
+
+"@types/type-is@~1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@types/type-is/-/type-is-1.6.2.tgz#38ee37fed94b4d2b88650292c3941600bda2815f"
+  integrity sha512-q8d51ZdF/D8xebrtNDsZH+4XBUFdz8xEgWhE4U4F4WWmcBZ8+i/r/qs9DmjAprYh5qQTYlY4BxaVKDrWIwNQ9w==
+  dependencies:
+    "@types/node" "*"
 
 "@types/uuid@^3.4.4":
   version "3.4.4"
@@ -102,6 +119,23 @@ make-error@^1.1.1:
   resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.5.tgz#efe4e81f6db28cadd605c70f29c831b58ef776c8"
   integrity sha512-c3sIjNUow0+8swNwVpqoH4YCShKNFkMaw6oH1mNS2haDZQqkeZFlHS3dhoeEbKKmJB4vXpJucU6oH75aDYeE9g==
 
+media-typer@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
+  integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
+
+mime-db@~1.38.0:
+  version "1.38.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.38.0.tgz#1a2aab16da9eb167b49c6e4df2d9c68d63d8e2ad"
+  integrity sha512-bqVioMFFzc2awcdJZIzR3HjZFX20QhilVS7hytkKrv7xFAn8bM1gzc/FOX2awLISvWe0PV8ptFKcon+wZ5qYkg==
+
+mime-types@~2.1.18:
+  version "2.1.22"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.22.tgz#fe6b355a190926ab7698c9a0556a11199b2199bd"
+  integrity sha512-aGl6TZGnhm/li6F7yx82bJiBZwgiEa4Hf6CNr8YO+r5UHr53tSTYZb102zyU50DOWWKeOv0uQLRL0/9EiKWCog==
+  dependencies:
+    mime-db "~1.38.0"
+
 mime@^2.3.1:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.0.tgz#e051fd881358585f3279df333fe694da0bcffdd6"
@@ -159,6 +193,14 @@ tslib@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
+
+type-is@~1.6.16:
+  version "1.6.16"
+  resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.16.tgz#f89ce341541c672b25ee7ae3c73dee3b2be50194"
+  integrity sha512-HRkVv/5qY2G6I8iab9cI7v1bOIdhm94dVjQCPFElW9W+3GeDOSHmy2EBYe4VTApuzolPcmgFTN3ftVJRKR2J9Q==
+  dependencies:
+    media-typer "0.3.0"
+    mime-types "~2.1.18"
 
 typescript@^3.3.3333:
   version "3.3.3333"

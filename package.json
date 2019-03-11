@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "@marblejs/core": "^2.0.0",
+    "@marblejs/middleware-body": "^2.0.0",
     "rxjs": "^6.4.0"
   },
   "devDependencies": {
